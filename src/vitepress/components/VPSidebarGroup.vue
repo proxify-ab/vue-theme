@@ -22,8 +22,7 @@ function hasActiveLink() {
   <section class="VPSidebarGroup">
     <div class="title">
       <h2 class="title-text" :class="{ active: hasActiveLink() }">
-        {{ text }}
-        <VTMenuBadge v-if="badge" :item="badge" />
+        {{ text }}<VTMenuBadge v-if="badge" :item="badge" />
       </h2>
     </div>
 

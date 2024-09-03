@@ -30,10 +30,10 @@ function toggle() {
       :aria-expanded="isOpen"
       @click="toggle"
     >
-      <span>
+      <div>
         <span class="button-text">{{ text }}</span>
         <VTMenuBadge v-if="badge" :item="badge" />
-      </span>
+      </div>
       <VTIconPlus class="button-icon" />
     </button>
 

@@ -28,8 +28,7 @@ watchPostEffect(updateActive)
     @click="closeSideBar"
   >
     <p class="link-text">
-      {{ item.text }}
-      <VTMenuBadge v-if="item.badge" :item="item.badge" />
+      {{ item.text }}<VTMenuBadge v-if="item.badge" :item="item.badge" />
     </p>
   </a>
 </template>
