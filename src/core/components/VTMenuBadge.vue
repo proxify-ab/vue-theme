@@ -8,7 +8,6 @@ const text = computed(() => typeof props.item === 'string' ? props.item : props.
 const type = computed(() => typeof props.item === 'string' ? 'primary' : (
   props.item.type || 'primary'
 ))
-
 </script>
 
 <template>
