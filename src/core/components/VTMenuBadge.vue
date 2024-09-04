@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, defineProps } from 'vue'
+import { computed } from 'vue'
 import { MenuBadgeItem } from '../../core'
 
 const props = defineProps<{ item: string | MenuBadgeItem }>()
