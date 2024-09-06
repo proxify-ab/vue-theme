@@ -1,15 +1,9 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import { MenuBadgeItem } from '../../core'
 
-const props = defineProps<{ item: string | MenuBadgeItem }>()
-
-const text = computed(() => typeof props.item === 'string' ? props.item : props.item.text)
-const type = computed(() => typeof props.item === 'string' ? 'primary' : (
-  props.item.type || 'primary'
-))
+defineProps<{ item: MenuBadgeItem }>()
 </script>
 
 <template>
-  <span class="vt-menu-badge" :class="type">{{ text }}</span>
+  <span class="vt-menu-badge" :class="item.type">{{ item.text }}</span>
 </template>

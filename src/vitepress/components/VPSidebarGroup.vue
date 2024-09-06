@@ -7,7 +7,7 @@ import { useData } from 'vitepress'
 
 const props = defineProps<{
   text: string
-  badge?: string | MenuBadgeItem
+  badge?: MenuBadgeItem
   items: MenuItemWithLink[]
 }>()
 

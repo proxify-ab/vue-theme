@@ -5,7 +5,7 @@ import { inject } from 'vue'
 defineProps<{
   text: string
   link: string
-  badge?: string | MenuBadgeItem
+  badge?: MenuBadgeItem
 }>()
 
 const closeScreen = inject('close-screen') as () => void

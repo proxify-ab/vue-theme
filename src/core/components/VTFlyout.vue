@@ -11,7 +11,7 @@ const props = defineProps<{
   button?: string
   items?: (MenuItem | MenuItemChild)[]
   label?: string
-  badge?: string | MenuBadgeItem
+  badge?: MenuBadgeItem
 }>()
 
 const open = ref(false)

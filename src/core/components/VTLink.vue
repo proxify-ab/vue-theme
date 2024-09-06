@@ -7,7 +7,7 @@ import VTMenuBadge from './VTMenuBadge.vue'
 const props = defineProps<{
   href?: string
   noIcon?: boolean
-  badge?: string | MenuBadgeItem
+  badge?: MenuBadgeItem
 }>()
 const isExternal = computed(() => props.href && /^[a-z]+:/i.test(props.href))
 </script>

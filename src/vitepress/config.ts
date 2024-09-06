@@ -158,7 +158,7 @@ export type NavItemWithLink = MenuItemWithLink & {
 export interface NavItemWithChildren {
   text?: string
   activeMatch?: string
-  badge?: string | MenuBadgeItem
+  badge?: MenuBadgeItem
   items: (NavItemWithLink | MenuItemChildWithChildren)[]
 }
 
@@ -170,7 +170,7 @@ export interface MultiSidebarConfig {
 
 export interface SidebarGroup {
   text: string
-  badge?: string | MenuBadgeItem
+  badge?: MenuBadgeItem
   items: MenuItemWithLink[]
 }
 

@@ -3,7 +3,7 @@ export type MenuItem = MenuItemWithLink | MenuItemWithChildren
 export interface MenuItemWithLink {
   text: string
   link: string
-  badge?: string | MenuBadgeItem
+  badge?: MenuBadgeItem
 }
 
 export interface MenuItemWithChildren {

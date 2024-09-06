@@ -7,7 +7,7 @@ import VTMenuBadge from '../../core/components/VTMenuBadge.vue'
 
 const props = defineProps<{
   text: string
-  badge?: string | MenuBadgeItem
+  badge?: MenuBadgeItem
   items: MenuItemChild[]
 }>()
 
