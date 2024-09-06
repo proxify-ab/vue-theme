@@ -20,7 +20,7 @@ export interface MenuItemChildWithChildren {
 
 export interface MenuBadgeItem {
   text: string
-  type?: 'primary' | 'secondary' | 'success' | 'info' | 'warning' | 'danger',
+  type?: 'primary' | 'secondary' | 'success' | 'info' | 'warning' | 'danger'
 }
 
 export type LocaleLinkItem = MenuItemWithLink & {
