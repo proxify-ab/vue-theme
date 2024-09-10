@@ -71,7 +71,6 @@ export default defineConfigWithTheme<ThemeConfig>({
       },
       {
         text: 'Ecosystem',
-        badge: { text: 'NEW' },
         items: [
           {
             items: [{ text: 'Jobs', link: 'https://vuejobs.com/?ref=vuejs' }]
@@ -118,18 +117,16 @@ export default defineConfigWithTheme<ThemeConfig>({
           },
           {
             text: 'Help',
-            badge: { text: 'New' },
             items: [
               { text: 'Forum', link: 'https://forum.vuejs.org/' },
               { text: 'Chat', link: 'https://discord.com/invite/HBherRA' },
-              { text: 'DEV Community', link: 'https://dev.to/t/vue', badge: { text: 'New' }, }
+              { text: 'DEV Community', link: 'https://dev.to/t/vue' }
             ]
           }
         ]
       },
       {
         text: 'Sponsor',
-        badge: { text: 'beta', type: 'success' },
         link: '/sponsor/'
       }
     ],
@@ -138,35 +135,17 @@ export default defineConfigWithTheme<ThemeConfig>({
       '/guide/': [
         {
           text: 'Essentials',
-          badge: { text: 'New' },
           items: [
-            { text: 'Introduction', link: '/guide/introduction',  badge: {
-                text: 'sec',
-                type: 'secondary'
-              } },
-            { text: 'Installation', link: '/guide/installation',  badge: {
-                text: 'success',
-                type: 'success'
-              } },
+            { text: 'Introduction', link: '/guide/introduction' },
+            { text: 'Installation', link: '/guide/installation' },
             {
               text: 'Application & Component Instances',
-              link: '/guide/instance',
-              badge: {
-                text: 'info',
-                type: 'info'
-              }
+              link: '/guide/instance'
             },
-            { text: 'Template Syntax', link: '/guide/template-syntax', badge: {
-                text: 'war',
-                type: 'warning'
-              } },
+            { text: 'Template Syntax', link: '/guide/template-syntax' },
             {
               text: 'Data Properties and Methods',
-              link: '/guide/data-methods',
-              badge: {
-                text: 'dan',
-                type: 'danger'
-              }
+              link: '/guide/data-methods'
             },
             {
               text: 'Computed Properties and Watchers',
